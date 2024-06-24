@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
     <title>RPG - Dragon Repeller</title>
+    <!-- Fonts and icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@400..700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e8f8daf298.js" crossorigin="anonymous"></script>
+    <!-- Fonts and icons-->
   </head>
   <body>
      
@@ -20,13 +26,13 @@
     <div id="game">
       <div id="stats">
         <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
-        <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
-        <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+        <span class="stat">Health: <strong><span id="healthText">100</span> <i class="fa-solid fa-heart"></i></strong></span>
+        <span class="stat">Gold: <strong><span id="goldText">50</span> <i class="fa-solid fa-coins"></i></strong></span>
       </div>
       <div id="controls">
-        <button id="button1">Go to store</button>
-        <button id="button2">Go to cave</button>
-        <button id="button3">Fight dragon</button>
+        <button id="button1">Go to store <i class="fa-solid fa-store"></i></button>
+        <button id="button2">Go to cave <i class="fa-brands fa-fort-awesome"></i></button>
+        <button id="button3">Fight dragon <i class="fa-solid fa-dragon"></i></button>
       </div>
       <div id="monsterStats">
         <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
@@ -34,6 +40,14 @@
       </div>
       <div id="text">
         Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
+      </div>
+    </div>
+    <div id="usernameModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <p class="form-text">Enter your username:</p>
+        <input type="text" id="usernameInput" placeholder="Username">
+        <button id="submitUsername">Submit</button>
       </div>
     </div>
     <script src="./script.js"></script>
